@@ -4,35 +4,38 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Neon Centered Navbar</title>
+
 <style>
-* {
-  margin: 0; 
-  padding: 0;
-  box-sizing: border-box;
+*{
+  margin:0; 
+  padding:0;
+  box-sizing:border-box;
   font-family: 'Segoe UI', sans-serif;
 }
 
 /* BACKGROUND (FULL NEON GRADIENT) */
   
-body {
-  background: #0f0f1a;
+body{
   min-height: 100vh;
-  display: flex; 
-  justify-content: center; 
-  align-items: center; 
-  background: radial-gradient(circle
+  display:flex; 
+  justify-content:center; 
+  align-items:center;
+  
+  background: radial-gradient(circle at center, #1a1a2e, #0f0f1a 70%);
+}
 
 /* NEON NAVBAR */
                               
 .navbar {
   background: rgba(20, 20, 35, 0.8);
   border-radius: 50px;
-  padding: 15px 40px; 
+  padding: 15px 40px;
+  border: 1px solid #ff00ff;
+  
   box-shadow: 
     0 0 10px #ff00ff, 
     0 0 20px #ff00ff,
-    inset 0 0 10px rgba(255, 0, 255 ...
-  border: 1px solid #ff00ff;
+    inset 0 0 10px rgba(255, 0, 255, 0.5);
 }
 
 /* FLEX LINKS */
@@ -59,7 +62,7 @@ body {
   
 .nav-links a:hover {
   color: #ff00ff;
-  text-shadow: 0 0 10px #ff00ff, 0 0 ...
+  text-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff;
 
 /* HOVER UNDERLINE ANIMATION */
   
