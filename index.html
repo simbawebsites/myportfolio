@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Neon Centered Navbar</title>
+<style>
+* {
+  margin: 0; 
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* BACKGROUND (FULL NEON GRADIENT) */
+  
+body {
+  background: #0f0f1a;
+  min-height: 100vh;
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  background: radial-gradient(circle
+
+/* NEON NAVBAR */
+                              
+.navbar {
+  background: rgba(20, 20, 35, 0.8);
+  border-radius: 50px;
+  padding: 15px 40px; 
+  box-shadow: 
+    0 0 10px #ff00ff, 
+    0 0 20px #ff00ff,
+    inset 0 0 10px rgba(255, 0, 255 ...
+  border: 1px solid #ff00ff;
+}
+
+/* FLEX LINKS */
+  
+.nav-links {
+  display: flex; 
+  list-style: none; 
+  gap: 40px; 
+}
+
+/* INDIVIDUAL LINKS */
+  
+.nav-links a {
+  text-decoration: none;
+  color: #00ffff; 
+  font-weight: 600; 
+  padding: 10px 0; 
+  position: relative; 
+  transition: 0.3s; 
+  text-shadow: 0 0 5px #00ffff; 
+}
+
+/* HOVER GLOW */
+  
+.nav-links a:hover {
+  color: #ff00ff;
+  text-shadow: 0 0 10px #ff00ff, 0 0 ...
+
+/* HOVER UNDERLINE ANIMATION */
+  
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  bottom: 0; 
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #ff00ff;
+  transition: 0.3s;
+  box-shadow: 0 0 5px #ff00ff;
+}
+
+.nav-links a:hover::after {
+  width: 100px;
+}
+</style>
+</head>
+  
+<body>
+  
+<nav class="navbar">
+  <ul class="nav-links">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+</nav>
+  
+</body>
+</html>
