@@ -22,6 +22,10 @@ body{
   align-items:center;
   
   background: radial-gradient(circle at center, #1a1a2e, #0f0f1a 70%);
+
+  /* prevents content from being hidden */
+  padding-top: 120px;
+
 }
 
 /* NEON NAVBAR */
@@ -125,6 +129,39 @@ body{
             drop-shadow(0 0 14px #00ffff)
             drop-shadow(0 0 25px #00ffff)
   }
+
+/* make the navbar sticky */
+.navbar {
+  position: fixed; 
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 999;
+
+  /* optional: slight backdrop blur for a nicer floating effect */
+  backdrop-filter: blur(6px);
+
+/* glowing trail underneath */
+  .navbar::after {
+    content: "";
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    border-radius: 50px;
+
+    background: radial-gradient(
+      ellipse at center,
+      rgba(255, 0, 255, 0.6),
+      rgba(255, 0, 255, 0) 70%
+    ); 
+
+    filter: blur(10px);
+    opacity: 0.8;
+    pointer-events: none;
+  }  
+
 }
   
 </style>
